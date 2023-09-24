@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@700&display=swap");
+
+* {
+  font-family: "Roboto", Sans-Serif;
+  color: #fff;
+  word-wrap: break-word;
+}
+body,
+.body {
+  background: #222;
+}
+
+.top h2{
+  font-weight: bold;
+  line-height: 2;
+}
+
+.form-label {
+  font-size: 13px;
+  font-style: italic;
+}
+.form-input {
+  margin-bottom: 12px;
+}
+div.top {
+  font-weight: 700;
+  margin-top: 1em;
+  text-align: center;
+}
+.container {
+  margin-top: 2em;
+}
+a,
+a:hover,
+a:after,
+a:focus {
+  text-decoration: none;
+}
+a {
+  color: #55adff;
+}
+a:hover {
+  color: ##ff7d7d;
+}
+#img-sample {
+  text-align: left;
+  width: 340px;
+  height: 180px;
+  border: solid 1px #fff;
+  opacity: 20%;
+  padding: 20px;
+}
+.download {
+  justify-content: center;
+  width: 90%;
+}
+.content {
+  margin-top: 1em;
+}
+.items {
+  visibility: visible;
+}
+#judul {
+  padding: 20px 2em 5px 2em;
+}
+.loader {
+  position: relative;
+  margin-top: 6em;
+  width: 120px;
+  height: 120px;
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 2px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.loader::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  right: -40px;
+  bottom: -40px;
+  border-radius: 50%;
+  border-top: 12px solid rgba(255, 255, 255, 0.2);
+  border-right: 12px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 12px solid rgba(255, 255, 255, 0.2);
+  border-left: 12px solid #fff;
+  transform: translateZ(0);
+  animation: load 1.2s infinite linear;
+}
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.markdown {
+	padding:1em;
+}
+#videoId {
+	font-size: 1px;
+	opacity: 0;
+}
+.downloadPos {
+	padding: 1em;
+max-height: 250px;
+height:200px;
+overflow: hidden;
+}
+.itemVid, .itemAud {
+	position: absolute;
+}
+.itemAud {
+	right: 2em;
+}
+.itemVid {
+	left: 2em;
+}
+
+#input {
+  margin-bottom: 12px;
+}

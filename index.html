@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <script defer src="./videoData.js"></script>
+    <script defer src="./config.js"></script>
+    <script defer src="./var.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title></title>
+  </head>
+
+  <body class="body">
+    <div class="top">
+      <h2>Youtube Downloader</h2>
+    </div>
+    <div class="container">
+      <section class="url">
+        <label class="form-label">Masukan link youtube</label>
+        <input required class="input form-control" type="url" id="input" />
+        <center>
+          <button
+            class="download btn btn-primary"
+            onclick="down(); getData();"
+            type="submit"
+          >
+            Download
+          </button>
+        </center>
+      </section>
+    </div>
+    <div class="content">
+      <center><div id="loading" class="loader">Loading</div></center>
+      <center>
+        <div id="img-sample">
+          Youtube downloader with native html without ads, Enjoy
+        </div>
+      </center>
+
+      <center>
+        <div id="pesan">
+          <span
+            style="font-style: oblique; color: #ff970c"
+            id="errormessage"
+          ></span>
+        </div>
+        <div class="items" id="thumbnail"></div>
+        <br />
+        <h4 class="items" id="judul"></h4>
+        <h6 class="items" id="channel"></h6>
+        <span id="videoData"></span> <br />
+        <br />
+        <br />
+      </center>
+      <span id="videoId"></span>
+      <div class="info">
+        <div class="downloadPos">
+          <span class="items itemVid" id="video"></span>
+          <span class="items itemAud" id="linkaudio"></span>
+          <br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
